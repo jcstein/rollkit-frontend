@@ -59,17 +59,18 @@ export const chain = {
     "apis": {
       "rpc": [
         {
-          "address": "http://127.0.0.1:26657",
+          "address": "http://localhost:26657",
           "provider": "JCS"
         }
       ],
       "rest": [
         {
-          "address": "http://127.0.0.1:1317",
+          "address": "http://localhost:1317",
           "provider": "JCS"
         }
       ]
     },
+    "beta": true,
     // "explorers": [
     //   {
     //     "kind": "Mintscan",

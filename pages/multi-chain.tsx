@@ -17,7 +17,7 @@ import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
 import { FaHome } from "react-icons/fa";
 import {
   WalletSection,
-  StakingSection,
+  // StakingSection,
 } from '../components';
 import { defaultChainName } from '../config';
 import { useState } from 'react';
