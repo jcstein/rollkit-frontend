@@ -36,6 +36,9 @@ function CreateCosmosApp({ Component, pageProps }: AppProps) {
             },
           },
         }}
+        endpointOptions={{
+          isLazy: true
+        }}
         wrappedWithChakra={true}
         signerOptions={signerOptions}
       >
