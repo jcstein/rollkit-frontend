@@ -33,6 +33,13 @@ import {
 import { defaultChainName } from '../config';
 import { ChainName } from '@cosmos-kit/core';
 
+const allowedChains = [
+  'gmrollup',
+  'celestiatestnet',
+  'celestiatestnet2',
+  'celestiatestnet3',
+];
+
 export const WalletSection = ({
   isMultiChain,
   providedChainName,
@@ -64,7 +71,9 @@ export const WalletSection = ({
 
   const chainOptions = useMemo(
     () =>
-      chainRecords.map((chainRecord) => {
+      chainRecords
+      .filter((chainRecord) => allowedChains.includes(chainRecord.name))
+      .map((chainRecord) => {
         return {
           chainName: chainRecord?.name,
           label: chainRecord?.chain.pretty_name,
