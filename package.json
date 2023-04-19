@@ -21,7 +21,7 @@
     "@emotion/react": "11.10.6",
     "@emotion/styled": "11.10.6",
     "bignumber.js": "9.1.1",
-    "chain-registry": "1.10.0",
+    "chain-registry": "1.12.0",
     "chakra-react-select": "4.6.0",
     "fast-fuzzy": "1.12.0",
     "font-awesome": "^4.7.0",
